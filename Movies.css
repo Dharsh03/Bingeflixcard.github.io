@@ -1,0 +1,212 @@
+*{
+  box-sizing: border-box;
+  margin: 0;}
+  
+html, body{
+  margin: 0;
+  background:black;
+  font-family: 'Montserrat', helvetica, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;}
+  
+.topnav {
+  overflow: hidden;
+  background-color: rgba(8, 0, 0, 0.973);}
+  
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+  font-size: 18px;}
+  
+.topnav a:hover {
+  background-color: rgb(201, 16, 16);
+  color: black;}
+  
+.topnav a.logo {
+  width: 8%;}
+
+.topnav c {
+  float: right;
+  color: #ec4343;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+  font-size: 18px;}
+
+.movie_card{
+  position: relative;
+  display: block;
+  width: 800px;
+  height: 350px;
+  margin: 100px auto; 
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.4s;}
+  
+.movie_card:hover{
+  transform: scale(1.02);
+  transition: all 0.4s;}
+  
+.info_section{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-blend-mode: multiply;
+  z-index: 2;
+  border-radius: 10px;}
+      
+.movie_header{
+  position: relative;
+  padding: 25px;
+  height: 40%;}
+  
+h1{
+  color: #fff;
+  font-weight: 400;}
+h4{
+  color: #9ac7fa;
+  font-weight: 400;}
+.minutes{
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgba(255,255,255,0.13);}
+.type{
+  display: inline-block;
+  color: #cee4fd;
+  margin-left: 10px;}
+        
+.locandina{
+  position: relative;
+  float: left;
+  margin-right: 20px;
+  height: 120px;
+  box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);}
+
+.movie_desc{
+  padding: 25px;
+  height: 50%;}
+.text{
+  color: #cfd6e1;}
+  
+.button1{
+  background-color: #0d0d0c;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration-line: none;
+  display:inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;}
+        
+.button2{
+  background-color: #0d0d0c;
+  color:white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;} 
+      
+.blur_back.charlie_back{                                   /*Charlie*/
+  background: url("https://scontent.fixm1-1.fna.fbcdn.net/v/t31.0-8/28954110_1200696460064373_4020843942241009204_o.jpg?_nc_cat=109&ccb=3&_nc_sid=6e5ad9&_nc_ohc=49mDB6e1xz0AX_TVx1H&_nc_ht=scontent.fixm1-1.fna&oh=4c2c59a01849ae944c2dcbdc6962c3f1&oe=604D33D0");
+  width:550px; 
+  background-repeat: no-repeat;
+  position:absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%; right: 0;
+  background-size: cover;
+  border-radius: 11px;}
+
+.blur_back.anbesivam_back{                                 /*Anbe Sivam*/
+  background:url("https://www.thehindu.com/entertainment/movies/e1jzoi/article28226139.ece/alternates/FREE_435/SLAnbe-Sivam");
+  width:580px; 
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;left: 220px;
+  z-index: 1;
+  height: 100%; right: 0;
+  background-size:cover;
+  border-radius: 11px;}
+
+.blur_back.avengersendgame_back{                           /*Avengers Endgame*/
+  background:url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ttr9000-v003-1004-1556338914.jpg");
+  width:530px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%; right: 0;
+  background-size: cover;
+  border-radius: 11px;}
+
+.blur_back.master_back{                                    /*Master*/
+  background: url("https://pbs.twimg.com/media/ETFSWWOWAAAtN54.jpg:large");
+  width: 500px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;left: 300px;
+  z-index: 1;
+  height: 100%; right: 0;
+  background-size: cover;
+  border-radius: 11px;}
+         
+@media screen and (min-width: 768px) {
+.movie_header{
+  width: 60%;}
+.movie_desc{
+  width: 50%;}
+.info_section{
+  background: linear-gradient(to right, #0d0d0c 50%, transparent 100%);}
+.blur_back{
+  width: 80%;
+  background-position: -100% 10% !important;}}
+@media screen and (max-width: 768px) {
+.topnav a.logo{
+  width: 8%;}
+.movie_card{
+  width: 95%;
+  margin: 70px auto; 
+  min-height: 350px;
+  height: auto;}
+.blur_back{
+  width: 100%;
+  background-position: 50% 50% !important;}
+.movie_header{
+  width: 100%;
+  margin-top: 85px;}
+.movie_desc{
+  width: 100%;}
+.info_section{
+  background: linear-gradient(to top, rgb(20, 20, 19) 50%, transparent 100%);
+  display: inline-grid;}}
+    
+#charlie{
+  box-shadow: 0px 0px 150px -45px rgba(255, 51, 0, 0.808);}
+#charlie:hover{
+  box-shadow: 0px 0px 120px -55px rgba(255, 51, 0, 0.808);}
+  
+#anbesivam{
+  box-shadow: 0px 0px 150px -45px rgba(16, 197, 164, 0.808);}
+#anbesivam:hover{
+  box-shadow: 0px 0px 120px -55px rgba(16, 197, 164, 0.808);}
+  
+#avengersendgame{
+  box-shadow: 0px 0px 150px -45px rgba(107, 17, 209, 0.808);}
+#avengersendgame:hover{
+  box-shadow: 0px 0px 120px -55px rgba(107, 17, 209, 0.808);}
+  
+#master{
+  box-shadow: 0px 0px 150px -45px rgba(236, 114, 33, 0.836);
+  margin-bottom: 200px;}
+#master:hover{
+  box-shadow: 0px 0px 120px -55px rgba(236, 114, 33, 0.836);}
